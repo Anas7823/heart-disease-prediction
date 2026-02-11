@@ -1,0 +1,27 @@
+# --- Manipulation de Données ---
+pandas>=2.0.0
+numpy>=1.24.0
+
+# --- Visualisation (Pour tes 25+ figures) ---
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# --- Machine Learning & Scikit-Learn Ecosystem ---
+scikit-learn>=1.2.0
+scipy>=1.10.0
+
+# --- Gestion du Déséquilibre (SMOTE pour les cas rares) ---
+imbalanced-learn>=0.10.0
+
+# --- Modèles Avancés (Gradient Boosting - État de l'art) ---
+xgboost>=1.7.0
+lightgbm>=3.3.0
+catboost>=1.2.0
+
+# --- Explainability (Interprétation des modèles - Le "Bonus Pro") ---
+shap>=0.41.0
+
+# --- Environnement Notebook ---
+jupyter
+ipykernel
+notebook
