@@ -13,7 +13,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# CSS pour améliorer le look (Optionnel mais ça fait pro pour la démo)
+# CSS pour améliorer le look
 st.markdown("""
     <style>
     .main {
