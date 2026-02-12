@@ -47,8 +47,6 @@ Base/
 ├── src/                      # Code source Python (Scripts de production)
 │   ├── __init__.py
 │   ├── app.py                # Front-end Streamlit
-│   ├── preprocessing.py      # Pipelines de transformation sklearn
-│   └── visualization.py      # Fonctions graphiques personnalisées
 │
 └── models/                   # Artefacts des modèles entraînés (.joblib, .pkl)
 
