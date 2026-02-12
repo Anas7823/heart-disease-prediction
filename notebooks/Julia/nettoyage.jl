@@ -2,7 +2,8 @@ using CSV, DataFrames, Plots, StatsPlots
 
 # --- 1. COLLECTE ---
 println("Chargement du fichier train.csv...")
-df = CSV.read("train.csv", DataFrame)
+train_path = joinpath(@__DIR__, "..", "..", "data", "raw", "train.csv")
+df = CSV.read(train_path, DataFrame)
 
 # --- 2. NETTOYAGE ---
 
