@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Heart Disease Prediction - Multi-Language Project
 
-## Getting Started
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![R](https://img.shields.io/badge/R-4.0%2B-blue)
+![Julia](https://img.shields.io/badge/Julia-1.6%2B-purple)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Kaggle](https://img.shields.io/badge/Kaggle-Competition-orange)
 
-First, run the development server:
+## Contexte du Projet
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Ce projet s'inscrit dans le cadre de la competition Kaggle **[Playground Series S6E2: Predicting Heart Disease](https://www.kaggle.com/competitions/playground-series-s6e2/data)**.
+
+L'objectif est de developper un modele de Machine Learning robuste pour predire la presence de maladies cardiaques chez des patients, en se basant sur des indicateurs cliniques (age, cholesterol, resultats ECG, etc.).
+
+**Particularite du projet :** Ce depot demontre une approche **polyglotte** de la Data Science, tirant parti des forces de chaque langage :
+* **R** : Analyse Exploratoire (EDA) et Feature Engineering statistique.
+* **Julia** : Nettoyage haute performance des donnees brutes.
+* **Python** : Entrainement des modeles (XGBoost), Pipeline ML et MLOps.
+
+---
+
+## Architecture du Projet
+
+```text
+Base/
+|
+├── README.md
+├── requirements.txt
+├── .gitignore
+|
+├── data/
+│   ├── raw/                  # Donnees brutes (train.csv, test.csv)
+│   └── processed/            # Donnees nettoyees pretes pour le ML
+|
+├── notebooks/                # Experimentation par langage
+│   ├── Julia/
+│   ├── Python/
+│   └── R/
+|
+├── src/                      # Code source Python
+├── models/                   # Artefacts des modeles entraines
+|
+└── heart-disease-app/        # Plateforme web (Next.js 14 + FastAPI)
+    ├── src/                  # Frontend Next.js (App Router, TypeScript, Tailwind)
+    ├── backend/              # Backend FastAPI + modele XGBoost (AUC=0.956)
+    └── public/               # Figures EDA, training, videos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Stack Technique
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend** : Next.js 14, TypeScript, Tailwind CSS, GSAP, Recharts
+- **Backend** : FastAPI, XGBoost 3.1.0, NumPy, Pydantic
+- **Langages** : Python, R, Julia
+- **Libraries Python** : scikit-learn, xgboost, pandas, seaborn, joblib
+- **Libraries R** : tidyverse, caret, janitor
+- **Modelisation** : XGBoost optimise Optuna (100 trials), seuil 0.42, consensus multi-modeles
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Resultats
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **AUC** : 0.956
+- **F1-Score** : 0.891
+- **Modele** : XGBoost (1787 arbres, 20 features dont 7 engineered)
+- **Pipeline** : Feature engineering 13 -> 20 features, optimisation bayesienne Optuna
