@@ -8,8 +8,8 @@ import { clsx } from "clsx";
 import { Menu, X, Activity } from "lucide-react";
 
 const NAV_ITEMS = [
-  { href: "/", label: "Le Probleme" },
-  { href: "/data", label: "Les Donnees" },
+  { href: "/", label: "Le Problème" },
+  { href: "/data", label: "Les Données" },
   { href: "/training", label: "L'Entrainement" },
   { href: "/demo", label: "Diagnostic IA" },
 ];

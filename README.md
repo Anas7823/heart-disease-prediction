@@ -4,7 +4,7 @@
 
 ### Predicting Cardiovascular Risk with 95.6% AUC on 630,000 Patients
 
-<img src="heart-disease-app/public/figures/training/fig13_dashboard.png" alt="Model Dashboard — XGBoost Performance Overview" width="100%"/>
+<img src="heart-disease-prediction/public/figures/training/fig13_dashboard.png" alt="Model Dashboard — XGBoost Performance Overview" width="100%"/>
 
 <br/>
 
@@ -162,77 +162,77 @@ The EDA was conducted entirely in **R Studio**, producing 43 publication-quality
 ### Data Quality
 
 <div align="center">
-<img src="heart-disease-app/public/figures/eda/data_quality/fig_01_missing_values.png" alt="Missing Values Analysis" width="70%"/>
+<img src="heart-disease-prediction/public/figures/eda/data_quality/fig_01_missing_values.png" alt="Missing Values Analysis" width="70%"/>
 <p><em>Figure 1 — Missing values analysis across all features. No missing data detected in the dataset.</em></p>
 </div>
 
 <div align="center">
-<img src="heart-disease-app/public/figures/eda/data_quality/fig_02_outliers_overview.png" alt="Outliers Overview" width="80%"/>
+<img src="heart-disease-prediction/public/figures/eda/data_quality/fig_02_outliers_overview.png" alt="Outliers Overview" width="80%"/>
 <p><em>Figure 2 — Outlier detection overview using IQR method across continuous variables.</em></p>
 </div>
 
 ### Target Distribution
 
 <div align="center">
-<img src="heart-disease-app/public/figures/eda/target/fig_03_target_distribution.png" alt="Target Distribution" width="65%"/>
+<img src="heart-disease-prediction/public/figures/eda/target/fig_03_target_distribution.png" alt="Target Distribution" width="65%"/>
 <p><em>Figure 3 — Target variable distribution showing the proportion of heart disease cases in the dataset.</em></p>
 </div>
 
 ### Numerical Distributions
 
 <div align="center">
-<img src="heart-disease-app/public/figures/eda/numerical/fig_04_age_histogram_kde.png" alt="Age Distribution" width="45%"/>
-<img src="heart-disease-app/public/figures/eda/numerical/fig_05_age_violin_boxplot.png" alt="Age Violin" width="45%"/>
+<img src="heart-disease-prediction/public/figures/eda/numerical/fig_04_age_histogram_kde.png" alt="Age Distribution" width="45%"/>
+<img src="heart-disease-prediction/public/figures/eda/numerical/fig_05_age_violin_boxplot.png" alt="Age Violin" width="45%"/>
 <p><em>Figures 4-5 — Age distribution (histogram + KDE) and class-separated violin plot.</em></p>
 </div>
 
 <div align="center">
-<img src="heart-disease-app/public/figures/eda/numerical/fig_10_max_hr_histogram_kde.png" alt="Max HR Distribution" width="45%"/>
-<img src="heart-disease-app/public/figures/eda/numerical/fig_11_max_hr_violin_boxplot.png" alt="Max HR Violin" width="45%"/>
+<img src="heart-disease-prediction/public/figures/eda/numerical/fig_10_max_hr_histogram_kde.png" alt="Max HR Distribution" width="45%"/>
+<img src="heart-disease-prediction/public/figures/eda/numerical/fig_11_max_hr_violin_boxplot.png" alt="Max HR Violin" width="45%"/>
 <p><em>Figures 10-11 — Maximum heart rate distribution. Strong separation between classes — patients with heart disease achieve lower max HR.</em></p>
 </div>
 
 <div align="center">
-<img src="heart-disease-app/public/figures/eda/numerical/fig_12_st_depression_histogram_kde.png" alt="ST Depression Distribution" width="45%"/>
-<img src="heart-disease-app/public/figures/eda/numerical/fig_13_st_depression_violin_boxplot.png" alt="ST Depression Violin" width="45%"/>
+<img src="heart-disease-prediction/public/figures/eda/numerical/fig_12_st_depression_histogram_kde.png" alt="ST Depression Distribution" width="45%"/>
+<img src="heart-disease-prediction/public/figures/eda/numerical/fig_13_st_depression_violin_boxplot.png" alt="ST Depression Violin" width="45%"/>
 <p><em>Figures 12-13 — ST depression distribution. Higher values strongly associated with heart disease presence.</em></p>
 </div>
 
 ### Categorical Distributions
 
 <div align="center">
-<img src="heart-disease-app/public/figures/eda/categorical/fig_28_thallium_countplot.png" alt="Thallium Count" width="45%"/>
-<img src="heart-disease-app/public/figures/eda/categorical/fig_29_thallium_disease_rate.png" alt="Thallium Disease Rate" width="45%"/>
+<img src="heart-disease-prediction/public/figures/eda/categorical/fig_28_thallium_countplot.png" alt="Thallium Count" width="45%"/>
+<img src="heart-disease-prediction/public/figures/eda/categorical/fig_29_thallium_disease_rate.png" alt="Thallium Disease Rate" width="45%"/>
 <p><em>Figures 28-29 — Thallium test results. Reversible defect (7) shows dramatically higher disease rate — the most discriminating categorical variable.</em></p>
 </div>
 
 <div align="center">
-<img src="heart-disease-app/public/figures/eda/categorical/fig_16_chest_pain_type_countplot.png" alt="Chest Pain Count" width="45%"/>
-<img src="heart-disease-app/public/figures/eda/categorical/fig_17_chest_pain_type_disease_rate.png" alt="Chest Pain Disease Rate" width="45%"/>
+<img src="heart-disease-prediction/public/figures/eda/categorical/fig_16_chest_pain_type_countplot.png" alt="Chest Pain Count" width="45%"/>
+<img src="heart-disease-prediction/public/figures/eda/categorical/fig_17_chest_pain_type_disease_rate.png" alt="Chest Pain Disease Rate" width="45%"/>
 <p><em>Figures 16-17 — Chest pain type distribution. Asymptomatic (type 4) has the highest disease rate — a counterintuitive but well-documented clinical finding.</em></p>
 </div>
 
 ### Correlations
 
 <div align="center">
-<img src="heart-disease-app/public/figures/eda/correlations/fig_30_correlation.png" alt="Correlation Matrix" width="70%"/>
+<img src="heart-disease-prediction/public/figures/eda/correlations/fig_30_correlation.png" alt="Correlation Matrix" width="70%"/>
 <p><em>Figure 30 — Correlation matrix revealing multicollinearity patterns and feature-target relationships.</em></p>
 </div>
 
 <div align="center">
-<img src="heart-disease-app/public/figures/eda/correlations/fig_31_pairplot.png" alt="Pairplot" width="85%"/>
+<img src="heart-disease-prediction/public/figures/eda/correlations/fig_31_pairplot.png" alt="Pairplot" width="85%"/>
 <p><em>Figure 31 — Pairplot of key continuous variables, colored by heart disease status.</em></p>
 </div>
 
 ### Multivariate Analysis
 
 <div align="center">
-<img src="heart-disease-app/public/figures/eda/multivariate/fig_32_ridgeline.png" alt="Ridgeline Plot" width="80%"/>
+<img src="heart-disease-prediction/public/figures/eda/multivariate/fig_32_ridgeline.png" alt="Ridgeline Plot" width="80%"/>
 <p><em>Figure 32 — Ridgeline plot showing distribution shifts across features between healthy and diseased patients.</em></p>
 </div>
 
 <div align="center">
-<img src="heart-disease-app/public/figures/eda/multivariate/fig_33_heatmap_sex_x_chest_pain_type.png" alt="Interaction Heatmap" width="70%"/>
+<img src="heart-disease-prediction/public/figures/eda/multivariate/fig_33_heatmap_sex_x_chest_pain_type.png" alt="Interaction Heatmap" width="70%"/>
 <p><em>Figure 33 — Interaction heatmap between sex and chest pain type, revealing gender-specific risk patterns.</em></p>
 </div>
 
@@ -282,7 +282,7 @@ Rigorous statistical testing was performed in R to quantify the significance of 
 | `bp` | 0.010 | Negligible effect |
 
 <div align="center">
-<img src="heart-disease-app/public/figures/statistical_tests/fig_34_significance.png" alt="Statistical Significance" width="75%"/>
+<img src="heart-disease-prediction/public/figures/statistical_tests/fig_34_significance.png" alt="Statistical Significance" width="75%"/>
 <p><em>Figure 34 — Statistical significance of all variables ranked by effect size.</em></p>
 </div>
 
@@ -297,7 +297,7 @@ Rigorous statistical testing was performed in R to quantify the significance of 
 100 trials of Tree-structured Parzen Estimator (TPE) search were run to find optimal hyperparameters.
 
 <div align="center">
-<img src="heart-disease-app/public/figures/training/fig01_optuna.png" alt="Optuna Optimization" width="85%"/>
+<img src="heart-disease-prediction/public/figures/training/fig01_optuna.png" alt="Optuna Optimization" width="85%"/>
 <p><em>Figure — Optuna optimization history. Best trial found at iteration #67 with AUC=0.956.</em></p>
 </div>
 
@@ -329,7 +329,7 @@ Rigorous statistical testing was performed in R to quantify the significance of 
 ### Learning Curves
 
 <div align="center">
-<img src="heart-disease-app/public/figures/training/fig05_learning.png" alt="Learning Curves" width="80%"/>
+<img src="heart-disease-prediction/public/figures/training/fig05_learning.png" alt="Learning Curves" width="80%"/>
 <p><em>Figure — Learning curves showing train/validation AUC convergence. Early stopping at iteration 1,787 prevents overfitting.</em></p>
 </div>
 
@@ -352,38 +352,38 @@ Rigorous statistical testing was performed in R to quantify the significance of 
 ### Evaluation Curves
 
 <div align="center">
-<img src="heart-disease-app/public/figures/training/fig02_evaluation.png" alt="Evaluation Dashboard" width="90%"/>
+<img src="heart-disease-prediction/public/figures/training/fig02_evaluation.png" alt="Evaluation Dashboard" width="90%"/>
 <p><em>Figure — Complete evaluation dashboard: ROC curve, Precision-Recall curve, and classification metrics.</em></p>
 </div>
 
 ### ROC & Precision-Recall
 
 <div align="center">
-<img src="heart-disease-app/public/figures/evaluation/roc_pr/fig_37_roc.png" alt="ROC Curve" width="45%"/>
-<img src="heart-disease-app/public/figures/evaluation/roc_pr/fig_38_pr_curve.png" alt="PR Curve" width="45%"/>
+<img src="heart-disease-prediction/public/figures/evaluation/roc_pr/fig_37_roc.png" alt="ROC Curve" width="45%"/>
+<img src="heart-disease-prediction/public/figures/evaluation/roc_pr/fig_38_pr_curve.png" alt="PR Curve" width="45%"/>
 <p><em>Figures 37-38 — ROC curve (AUC=0.956) and Precision-Recall curve (PR-AUC=0.950).</em></p>
 </div>
 
 ### Confusion Matrix
 
 <div align="center">
-<img src="heart-disease-app/public/figures/evaluation/confusion_matrix/fig_36_confusion_matrix.png" alt="Confusion Matrix" width="55%"/>
+<img src="heart-disease-prediction/public/figures/evaluation/confusion_matrix/fig_36_confusion_matrix.png" alt="Confusion Matrix" width="55%"/>
 <p><em>Figure 36 — Confusion matrix on 126,000 validation patients at threshold=0.42.</em></p>
 </div>
 
 ### Calibration & Threshold
 
 <div align="center">
-<img src="heart-disease-app/public/figures/evaluation/calibration/fig_39_prob_dist.png" alt="Probability Distribution" width="45%"/>
-<img src="heart-disease-app/public/figures/evaluation/calibration/fig_40_threshold.png" alt="Threshold Analysis" width="45%"/>
+<img src="heart-disease-prediction/public/figures/evaluation/calibration/fig_39_prob_dist.png" alt="Probability Distribution" width="45%"/>
+<img src="heart-disease-prediction/public/figures/evaluation/calibration/fig_40_threshold.png" alt="Threshold Analysis" width="45%"/>
 <p><em>Figures 39-40 — Predicted probability distribution and threshold optimization analysis. Optimal threshold at 0.42 maximizes F1-Score.</em></p>
 </div>
 
 ### KS Statistic & Lift
 
 <div align="center">
-<img src="heart-disease-app/public/figures/training/fig07_ks.png" alt="KS Statistic" width="45%"/>
-<img src="heart-disease-app/public/figures/training/fig06_lift.png" alt="Lift Curve" width="45%"/>
+<img src="heart-disease-prediction/public/figures/training/fig07_ks.png" alt="KS Statistic" width="45%"/>
+<img src="heart-disease-prediction/public/figures/training/fig06_lift.png" alt="Lift Curve" width="45%"/>
 <p><em>Figures — Kolmogorov-Smirnov statistic (0.778) and cumulative lift curve.</em></p>
 </div>
 
@@ -413,29 +413,29 @@ SHAP (SHapley Additive exPlanations) analysis provides complete transparency int
 ### SHAP Summary Plot
 
 <div align="center">
-<img src="heart-disease-app/public/figures/training/fig08_shap_summary.png" alt="SHAP Summary" width="85%"/>
+<img src="heart-disease-prediction/public/figures/training/fig08_shap_summary.png" alt="SHAP Summary" width="85%"/>
 <p><em>Figure — SHAP beeswarm plot showing each feature's impact on model predictions. Red dots indicate high feature values, blue dots indicate low values.</em></p>
 </div>
 
 ### SHAP High/Low Risk Profiles
 
 <div align="center">
-<img src="heart-disease-app/public/figures/training/fig09_shap_high.png" alt="SHAP High Risk" width="45%"/>
-<img src="heart-disease-app/public/figures/training/fig10_shap_low.png" alt="SHAP Low Risk" width="45%"/>
+<img src="heart-disease-prediction/public/figures/training/fig09_shap_high.png" alt="SHAP High Risk" width="45%"/>
+<img src="heart-disease-prediction/public/figures/training/fig10_shap_low.png" alt="SHAP Low Risk" width="45%"/>
 <p><em>Figures — SHAP waterfall plots for high-risk (left) and low-risk (right) patient profiles, showing how each feature pushes the prediction.</em></p>
 </div>
 
 ### SHAP Dependence
 
 <div align="center">
-<img src="heart-disease-app/public/figures/training/fig11_shap_dep.png" alt="SHAP Dependence" width="80%"/>
+<img src="heart-disease-prediction/public/figures/training/fig11_shap_dep.png" alt="SHAP Dependence" width="80%"/>
 <p><em>Figure — SHAP dependence plots revealing feature interactions and non-linear relationships.</em></p>
 </div>
 
 ### Feature Importance (Gain)
 
 <div align="center">
-<img src="heart-disease-app/public/figures/training/fig12_importance.png" alt="Feature Importance" width="75%"/>
+<img src="heart-disease-prediction/public/figures/training/fig12_importance.png" alt="Feature Importance" width="75%"/>
 <p><em>Figure — XGBoost native feature importance (gain), consistent with SHAP rankings.</em></p>
 </div>
 
@@ -573,7 +573,7 @@ Health check endpoint returning model count and names.
 ```bash
 # Clone the repository
 git clone https://github.com/Anas7823/heart-disease-prediction.git
-cd heart-disease-prediction/heart-disease-app
+cd heart-disease-prediction/heart-disease-prediction
 
 # Install dependencies
 npm install
@@ -588,7 +588,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ```bash
 # Navigate to backend
-cd heart-disease-app/backend
+cd heart-disease-prediction/backend
 
 # Create virtual environment
 python -m venv venv
@@ -607,7 +607,7 @@ API available at [http://localhost:8000/docs](http://localhost:8000/docs) (Swagg
 ### Docker (Backend)
 
 ```bash
-cd heart-disease-app/backend
+cd heart-disease-prediction/backend
 docker build -t heart-disease-api .
 docker run -p 8000:8000 heart-disease-api
 ```
@@ -640,73 +640,190 @@ heart-disease-prediction/
 ├── models/
 │   └── xgboost_heart_disease_v1.joblib          # Trained model (joblib format)
 │
-├── src/                      # Code source Python (Scripts de production)
-│   ├── __init__.py
-│   ├── app.py                # Front-end Streamlit
-│   ├── preprocessing.py      # Pipelines de transformation sklearn
-│   └── visualization.py      # Fonctions graphiques personnalisées
+├── src/
+│   ├── app.py                                   # Streamlit frontend (legacy)
+│   ├── preprocessing.py                         # sklearn transformation pipelines
+│   └── visualization.py                         # Custom plotting functions
 │
-└── models/                   # Artefacts des modèles entraînés (.joblib, .pkl)
+└── heart-disease-prediction/                           # Full-stack web platform
+    │
+    ├── package.json                             # Node.js dependencies
+    ├── tailwind.config.ts                       # Design system configuration
+    ├── tsconfig.json                            # TypeScript configuration
+    │
+    ├── backend/
+    │   ├── app.py                               # FastAPI server (3 endpoints)
+    │   ├── requirements.txt                     # Python API dependencies
+    │   ├── Dockerfile                           # Container configuration
+    │   └── models/
+    │       └── hakim/
+    │           ├── xgb_model.json               # XGBoost model (native JSON)
+    │           └── model_meta.json              # Metadata (metrics, SHAP, params)
+    │
+    ├── public/
+    │   ├── videos/                              # 4 hero background videos (MP4)
+    │   ├── data/                                # CSV data for charts (Chi2, Wilcoxon)
+    │   └── figures/
+    │       ├── training/                        # 14 training figures (Optuna, SHAP, etc.)
+    │       ├── eda/
+    │       │   ├── data_quality/                # 3 figures (missing values, outliers)
+    │       │   ├── target/                      # 2 figures (target distribution)
+    │       │   ├── numerical/                   # 20 figures (histograms, violins)
+    │       │   ├── categorical/                 # 32 figures (countplots, disease rates)
+    │       │   ├── correlations/                # 2 figures (correlation, pairplot)
+    │       │   └── multivariate/                # 2 figures (ridgeline, heatmap)
+    │       ├── evaluation/                      # 7 figures (ROC, PR, calibration, etc.)
+    │       ├── statistical_tests/               # 1 figure (significance ranking)
+    │       └── stacking/                        # 2 figures (stacking analysis)
+    │
+    └── src/
+        ├── app/
+        │   ├── layout.tsx                       # Root layout (fonts, theme, glow)
+        │   ├── page.tsx                         # Landing page
+        │   ├── data/page.tsx                    # Data analysis page
+        │   ├── demo/page.tsx                    # Diagnostic IA page
+        │   └── training/page.tsx                # Training page
+        │
+        ├── components/
+        │   ├── ui/                              # 7 reusable UI components
+        │   │   ├── GlassCard.tsx                # Glassmorphism card with GSAP
+        │   │   ├── Button.tsx                   # Gradient button
+        │   │   ├── MetricCard.tsx               # Animated metric counter
+        │   │   ├── FigureViewer.tsx             # Image viewer with lightbox
+        │   │   ├── VideoBackground.tsx          # HTML5 video background
+        │   │   └── MedicalDisclaimer.tsx        # Medical disclaimer
+        │   │
+        │   ├── landing/                         # 4 landing page sections
+        │   │   ├── HeroSection.tsx              # Animated hero with GSAP
+        │   │   ├── ProblemStats.tsx             # 4 stat cards with count-up
+        │   │   ├── TimelineSection.tsx          # Project timeline
+        │   │   └── ResultsPreview.tsx           # AUC showcase
+        │   │
+        │   ├── data/                            # 5 data analysis components
+        │   │   ├── DatasetOverview.tsx           # Dataset statistics
+        │   │   ├── DistributionCharts.tsx        # 30 figures with tab navigation
+        │   │   ├── CorrelationSection.tsx        # Correlation matrix + pairplot
+        │   │   ├── StatisticalTests.tsx          # Chi2 + Wilcoxon results
+        │   │   └── FeatureEngineeringSection.tsx # 7 engineered features
+        │   │
+        │   ├── training/                        # 6 training components
+        │   │   ├── PipelineFlow.tsx              # Animated pipeline diagram
+        │   │   ├── OptunaSection.tsx             # Optuna figure + params table
+        │   │   ├── MetricsGrid.tsx               # Performance metrics
+        │   │   ├── ShapAnalysis.tsx              # 4 SHAP figures + bar chart
+        │   │   ├── ModelComparison.tsx           # 3-model comparison table
+        │   │   └── FigureGallery.tsx             # Training figures gallery
+        │   │
+        │   ├── demo/                            # 4 diagnostic components
+        │   │   ├── FormStepIndicator.tsx         # 4-step progress bar
+        │   │   ├── PatientForm.tsx               # Multi-step form (sliders, toggles)
+        │   │   ├── PredictionResults.tsx         # Consensus panel + SHAP bars
+        │   │   └── RiskGauge.tsx                 # SVG semi-circular gauge
+        │   │
+        │   └── layout/
+        │       ├── Navbar.tsx                   # Glass navigation bar
+        │       └── Footer.tsx                   # Minimal footer
+        │
+        └── lib/
+            ├── types.ts                         # TypeScript type definitions
+            ├── constants.ts                     # All metrics, params, SHAP data
+            ├── api.ts                           # API client (predict, models, health)
+            ├── features.ts                      # Client-side feature engineering
+            └── animations.ts                    # GSAP animation presets
+```
 
-## 🔄 Pipeline Data Science
+---
 
-Le flux de travail suit une méthodologie rigoureuse, allant du nettoyage haute performance à l'inférence, en garantissant la reproductibilité.
+## 💡 Lessons Learned
 
-```mermaid
-graph LR
-A[Collecte Data] --> B[Nettoyage & EDA]
-B --> C[Feature Engineering]
-C --> D[Entraînement Modèle]
-D --> E[Optimisation Seuil]
-E --> F[Prédiction Finale]
+1. **Feature engineering > model tuning.** The `risk_composite` feature — a simple sum of 5 binary clinical indicators — became the most important feature (11% SHAP). Domain knowledge outperforms brute-force hyperparameter search.
 
+2. **Threshold optimization is critical.** The default 0.5 threshold yielded suboptimal F1. Systematic threshold search found 0.42 as the optimal cutoff, significantly improving the precision-recall trade-off for clinical applications.
 
-1. Collecte : Importation des données brutes de la compétition Kaggle.
+3. **Adversarial validation prevents data leakage.** An adversarial AUC of 0.502 (essentially random) confirmed that our train/validation split is valid and the model isn't exploiting distribution differences.
 
-2. Nettoyage & EDA (R/Julia) :
-    - Identification des valeurs aberrantes et imputation intelligente.
-    - Typage strict des variables (catégorielles vs numériques).
+4. **Shallow trees generalize better.** Despite XGBoost supporting deep trees, `max_depth=3` with 1,787 trees outperformed deeper configurations. The regularization from shallow trees + low learning rate (0.023) proved critical for generalization on 630K patients.
 
-3. Feature Engineering (R) :
-    - Création de ratios médicaux (ex: Risk Ratio).
-    - Transformation log des variables asymétriques (st_depression).
-    - Encodage One-Hot des variables catégorielles.
+5. **Polyglot pipelines leverage each language's strengths.** R's ggplot2 produced publication-quality EDA figures. Julia's performance enabled efficient data cleaning. Python's ecosystem delivered the ML pipeline and API. Using the right tool for each job improved both quality and productivity.
 
-4. Modélisation (Python) :
-    - Utilisation de XGBoost avec accélération histogramme (tree_method='hist').
-    - Optimisation des hyperparamètres via RandomizedSearchCV pour gérer la volumétrie (600k+ lignes).
-    - Stratégie de validation croisée (StratifiedKFold).
+6. **Calibration matters for medical predictions.** A Brier Score of 0.081 confirms that predicted probabilities are meaningful — when the model says "70% risk", it should be right approximately 70% of the time. This is essential for any clinical decision support system.
 
-5. Optimisation : Ajustement du seuil de décision (Threshold Tuning) pour maximiser le F1-Score et la sensibilité médicale.
+---
 
+## 🔮 Future Work
 
-## 🛠️ Stack Technique
+- [ ] **Integrate colleague models** — Add 2 additional independently trained models to the consensus (Anas: XGBoost variant, Mouad: alternative approach)
+- [ ] **Stacking ensemble** — Implement a meta-learner combining the 3 base model predictions
+- [ ] **Cross-validation** — Replace single train/val split with 5-fold stratified cross-validation
+- [ ] **Deploy to production** — Frontend on Vercel, backend on Railway with Docker
+- [ ] **Patient history** — Add sessionStorage persistence for form data across page navigation
+- [ ] **Confidence intervals** — Display prediction uncertainty bounds alongside point estimates
+- [ ] **A/B testing** — Compare consensus vs. best single model performance in production
+- [ ] **Multilingual support** — Add English translation for international accessibility
 
-Langages : Python, R, Julia.
+---
 
-Libraries Python : scikit-learn, xgboost, pandas, seaborn, joblib.
+## 👥 Team
 
-Libraries R : tidyverse, caret, janitor.
+<div align="center">
 
-Modélisation : Pipeline Scikit-Learn, Gradient Boosting, Hyperparameter Tuning.
+**Master Big Data & AI Development — IPSSI Paris — Promotion 2026**
 
-## 🚀 Comment lancer le projet
+| Member | Role | Contribution |
+|:-------|:-----|:-------------|
+| **Hakim Djaalal** | ML Lead + Full-Stack | XGBoost/Optuna pipeline, Feature Engineering, FastAPI backend, Next.js platform |
+| **Anas El Khiat** | Data Science | EDA, Statistical Analysis, Model training (branch `anas`) |
+| **Mouad Aoughane** | Data Science | Data processing, Model training (branch `mouad`) |
 
-Installation :
-Cloner le dépôt et installer les dépendances Python :
+<br/>
 
-git clone [https://github.com/votre-username/heart-disease-prediction.git](https://github.com/votre-username/heart-disease-prediction.git)
-cd heart-disease-prediction
-pip install -r requirements.txt
+[![GitHub - Hakim](https://img.shields.io/badge/GitHub-Hakim78-181717?style=for-the-badge&logo=github)](https://github.com/Hakim78)
+[![GitHub - Anas](https://img.shields.io/badge/GitHub-Anas7823-181717?style=for-the-badge&logo=github)](https://github.com/Anas7823)
 
-3. Entraînement du modèle
-Lancer le script d'entraînement optimisé pour générer le modèle final et les prédictions :
+</div>
 
-via le notebook : notebooks/Python/03_model_training.ipynb
+---
 
-## 📊 Résultats
+## 📝 Citation
 
-Modèle : XGBoost Classifier (Optimisé)
-Stratégie : Randomized Search sur 15 itérations + Threshold Tuning.
-Métrique Cible : F1-Score (Équilibre Précision/Rappel).
-Output : Fichier submission.csv prêt pour Kaggle.
+```bibtex
+@misc{djaalal2026heartdisease,
+  title     = {Heart Disease Prediction: Multi-Model Consensus Platform
+               with XGBoost, SHAP Explainability and Full-Stack Web Application},
+  author    = {Djaalal, Hakim and El Khiat, Anas and Aoughane, Mouad},
+  year      = {2026},
+  publisher = {GitHub},
+  url       = {https://github.com/Anas7823/heart-disease-prediction}
+}
+```
+
+---
+
+## 🙏 Acknowledgements
+
+- [Kaggle Playground Series S6E2](https://www.kaggle.com/competitions/playground-series-s6e2) for the competition and dataset
+- [XGBoost](https://xgboost.readthedocs.io/) for the gradient boosting framework
+- [Optuna](https://optuna.org/) for Bayesian hyperparameter optimization
+- [SHAP](https://shap.readthedocs.io/) for model explainability
+- [Next.js](https://nextjs.org/) and [Vercel](https://vercel.com/) for the frontend framework
+- [FastAPI](https://fastapi.tiangolo.com/) for the high-performance API framework
+- [GSAP](https://greensock.com/gsap/) for premium web animations
+- [R Studio](https://posit.co/products/open-source/rstudio/) for statistical analysis tooling
+
+---
+
+<div align="center">
+
+**⚠️ Medical Disclaimer**
+
+*This tool is an academic project for educational purposes. It does not constitute a medical diagnosis and does not replace consultation with a healthcare professional. Predictions are based on a statistical model trained on historical data.*
+
+---
+
+**If you found this project useful, please consider giving it a ⭐**
+
+<a href="https://github.com/Anas7823/heart-disease-prediction/stargazers">
+<img src="https://img.shields.io/github/stars/Anas7823/heart-disease-prediction?style=social" alt="GitHub Stars"/>
+</a>
+
+</div>

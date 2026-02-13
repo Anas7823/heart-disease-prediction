@@ -36,7 +36,7 @@ st.markdown("""
 def load_pipeline():
     # On charge le Pipeline complet (qui contient le scaler et le modèle)
     try:
-        model = joblib.load('models/xgboost_heart_disease_v1.joblib')
+        model = joblib.load("backend/models/anas/xgboost_heart_disease_v1.joblib")
         return model
     except FileNotFoundError:
         st.error("⚠️ Fichier modèle introuvable. Vérifiez que 'models/xgboost_heart_disease_v1.joblib' existe.")

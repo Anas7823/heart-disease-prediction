@@ -41,5 +41,6 @@ __pycache__/
 backend/.venv/
 backend/venv/
 .venv
+venv
 node_modules
 .next

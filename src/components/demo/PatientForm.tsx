@@ -125,7 +125,7 @@ export function PatientForm({
               <h2 className="text-2xl font-bold">Recapitulatif patient</h2>
             </div>
             <p className="text-text-secondary text-sm">
-              Verifiez les donnees avant de lancer le diagnostic
+              Verifiez les données avant de lancer le diagnostic
             </p>
           </div>
 

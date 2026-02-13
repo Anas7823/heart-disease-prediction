@@ -16,14 +16,14 @@ export function CorrelationSection() {
         <FigureViewer
           src={FIGURE_PATHS.eda.pairplot}
           alt="Pairplot des variables principales"
-          caption="Pairplot - relations bivariees colores par classe"
+          caption="Pairplot - relations bivariées colores par classe"
         />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <FigureViewer
           src={FIGURE_PATHS.eda.ridgeline}
           alt="Ridgeline plot"
-          caption="Ridgeline - distributions par classe superposees"
+          caption="Ridgeline - distributions par classe superposées"
         />
         <FigureViewer
           src={FIGURE_PATHS.eda.heatmap}

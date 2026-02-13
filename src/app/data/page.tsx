@@ -16,7 +16,7 @@ export default function DataPage() {
       <section className="relative min-h-[80vh] flex items-center overflow-hidden">
         <VideoBackground src="/videos/hero_data_background.mp4" />
         <div className="section-container relative z-10 text-center py-24 md:py-36">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Les donnees</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Les données</h1>
           <p className="text-lg sm:text-xl text-text-secondary">
             <span className="font-mono gradient-text">630 000</span> histoires
             de patients
@@ -56,7 +56,7 @@ export default function DataPage() {
             Correlations et interactions
           </h2>
           <p className="text-text-secondary mb-8 text-sm sm:text-base">
-            Relations entre les variables et interactions multivariees.
+            Relations entre les variables et interactions multivariées.
           </p>
           <CorrelationSection />
         </div>
@@ -79,7 +79,7 @@ export default function DataPage() {
         <div className="section-container">
           <h2 className="text-xl sm:text-2xl font-bold mb-2">Feature Engineering</h2>
           <p className="text-text-secondary mb-8 text-sm sm:text-base">
-            7 nouvelles features creees a partir des 13 variables brutes pour
+            7 nouvelles features créées à partir des 13 variables brutes pour
             capturer des relations medicalement pertinentes.
           </p>
           <FeatureEngineeringSection />

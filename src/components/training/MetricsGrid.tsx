@@ -40,7 +40,7 @@ const METRICS = [
     label: "Seuil optimal",
     value: MODEL_METRICS.optimalThreshold,
     decimals: 2,
-    description: "Seuil de decision maximisant le F1-Score",
+    description: "Seuil de décision maximisant le F1-Score",
   },
 ];
 

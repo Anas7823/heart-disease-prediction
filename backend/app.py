@@ -193,11 +193,11 @@ async def predict(patient: PatientInput):
         # Je determine le niveau de confiance
         distance = abs(prob - threshold)
         if distance > 0.3:
-            confidence = "Tres elevee"
+            confidence = "Tres elevée"
         elif distance > 0.15:
-            confidence = "Elevee"
+            confidence = "Elevée"
         else:
-            confidence = "Moderee"
+            confidence = "Modérée"
 
         model_results.append(ModelResult(
             name=name,

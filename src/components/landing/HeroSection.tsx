@@ -42,7 +42,7 @@ export function HeroSection() {
             <span className="gradient-text">17.9 millions</span>
             <br />
             <span className="text-text-primary">
-              de vies perdues chaque annee
+              de vies perdues chaque année
             </span>
           </h1>
 
@@ -81,7 +81,7 @@ export function HeroSection() {
             </Link>
             <Link href="/data">
               <Button variant="glass" size="lg" className="w-full sm:w-auto">
-                Explorer les donnees
+                Explorer les données
               </Button>
             </Link>
           </div>

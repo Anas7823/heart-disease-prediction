@@ -103,7 +103,7 @@ export function ResultsPreview() {
                 <div className="text-left">
                   <h3 className="font-semibold mb-1">1 consensus IA</h3>
                   <p className="text-sm text-text-secondary">
-                    Decision collective ponderee par la performance de chaque modele
+                    Décision collective ponderée par la performance de chaque modele
                   </p>
                 </div>
               </div>

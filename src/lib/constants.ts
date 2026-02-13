@@ -63,7 +63,7 @@ export const FEATURE_CONFIGS: FeatureConfig[] = [
   {
     key: "age",
     label: "Age",
-    description: "Age du patient en annees",
+    description: "Age du patient en années",
     type: "slider",
     min: 18,
     max: 100,
@@ -280,7 +280,7 @@ export const FORM_STEPS: FormStep[] = [
   {
     id: "clinical",
     label: "Clinique",
-    description: "Donnees cliniques de base",
+    description: "Données cliniques de base",
     fields: ["bp", "cholesterol", "fbs_over_120", "max_hr"],
   },
   {
@@ -383,7 +383,7 @@ export const PATIENT_PRESETS: PatientPreset[] = [
 
 // Je definis le disclaimer medical
 export const MEDICAL_DISCLAIMER =
-  "Cet outil est un projet academique a visee educative. Il ne constitue en aucun cas un diagnostic medical et ne remplace pas la consultation d'un professionnel de sante. Les predictions sont basees sur un modele statistique entraine sur des donnees historiques.";
+  "Cet outil est un projet academique a visée éducative. Il ne constitue en aucun cas un diagnostic medical et ne remplace pas la consultation d'un professionnel de santé. Les predictions sont basées sur un modele statistique entraine sur des données historiques.";
 
 // Je definis les chemins vers les figures statiques
 export const FIGURE_PATHS = {

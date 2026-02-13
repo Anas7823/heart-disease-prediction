@@ -154,8 +154,8 @@ export default function DemoPage() {
             Diagnostic IA
           </h1>
           <p className="text-text-secondary max-w-2xl mx-auto text-sm sm:text-base px-4">
-            Renseignez les donnees cliniques du patient et obtenez une
-            prediction basee sur les vrais modeles d&apos;intelligence
+            Renseignez les données cliniques du patient et obtenez une
+            prediction basée sur les vrais modeles d&apos;intelligence
             artificielle.
           </p>
         </div>
@@ -241,7 +241,7 @@ export default function DemoPage() {
                     onClick={handleSubmit}
                     className="mt-3 text-xs font-medium text-accent-red hover:text-accent-red-light transition-colors"
                   >
-                    Reessayer
+                    Réessayer
                   </button>
                 </div>
               </div>

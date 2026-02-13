@@ -61,12 +61,12 @@ function generateInterpretation(
   if (consensus.prediction === 0) {
     return `Le modele estime une probabilite de ${prob}% de maladie cardiaque, correspondant a un risque ${level}. `
       + `Les indicateurs cliniques les plus influents dans cette evaluation sont : ${topFactors[0]}, ${topFactors[1]} et ${topFactors[2]}. `
-      + `Le profil du patient se situe en dessous du seuil de decision (42%).`;
+      + `Le profil du patient se situe en dessous du seuil de décision (42%).`;
   }
 
   return `Le modele identifie un risque ${level} avec une probabilite de ${prob}%. `
     + `Les facteurs les plus determinants sont : ${topFactors[0]}, ${topFactors[1]} et ${topFactors[2]}. `
-    + `Le profil du patient depasse le seuil de decision clinique (42%), ce qui motive une attention particuliere.`;
+    + `Le profil du patient depasse le seuil de décision clinique (42%), ce qui motive une attention particuliere.`;
 }
 
 export function PredictionResults({

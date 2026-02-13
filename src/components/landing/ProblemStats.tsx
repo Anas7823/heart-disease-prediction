@@ -16,7 +16,7 @@ const STATS = [
     value: 80,
     suffix: "%",
     decimals: 0,
-    description: "Avec une detection precoce et un suivi adapte",
+    description: "Avec une detection précoce et un suivi adapte",
   },
   {
     label: "Detection a temps",
@@ -44,7 +44,7 @@ export function ProblemStats() {
             Le defi cardiovasculaire
           </h2>
           <p className="text-text-secondary max-w-2xl mx-auto">
-            Les chiffres parlent d&apos;eux-memes. La detection precoce est
+            Les chiffres parlent d&apos;eux-memes. La detection précoce est
             l&apos;arme la plus efficace contre les maladies cardiaques.
           </p>
         </div>

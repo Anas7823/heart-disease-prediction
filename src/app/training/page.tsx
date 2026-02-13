@@ -28,7 +28,7 @@ export default function TrainingPage() {
           </p>
           <p className="text-sm text-text-muted max-w-2xl mx-auto px-4">
             De l&apos;optimisation des hyperparametres a l&apos;explainability
-            SHAP, chaque etape a ete pensee pour maximiser la performance tout
+            SHAP, chaque etape a ete pensée pour maximiser la performance tout
             en garantissant l&apos;interpretabilite.
           </p>
         </div>
