@@ -8,8 +8,10 @@ import type { PatientInput, PredictionResponse } from "@/lib/types";
 import { FormStepIndicator } from "@/components/demo/FormStepIndicator";
 import { PatientForm } from "@/components/demo/PatientForm";
 import { PredictionResults } from "@/components/demo/PredictionResults";
+import { AnalysisLoader } from "@/components/demo/AnalysisLoader";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { VideoBackground } from "@/components/ui/VideoBackground";
+import { ParticlesBackground } from "@/components/ui/ParticlesBackground";
 import { AlertTriangle, Wifi, WifiOff, Activity } from "lucide-react";
 import { clsx } from "clsx";
 
@@ -140,7 +142,10 @@ export default function DemoPage() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
+      {/* Particules ambiantes */}
+      <ParticlesBackground />
+
       {/* Hero avec video de fond */}
       <section className="relative min-h-[70vh] flex items-center overflow-hidden">
         <VideoBackground src="/videos/hero_demo.mp4" />
@@ -157,7 +162,7 @@ export default function DemoPage() {
       </section>
 
       {/* Status API */}
-      <div className="section-container mb-6">
+      <div className="section-container mb-6 relative z-10">
         <div className="flex items-center justify-center gap-2 text-xs">
           {state.apiHealthy === null ? (
             <span className="text-text-muted flex items-center gap-1">
@@ -179,8 +184,8 @@ export default function DemoPage() {
       </div>
 
       {/* Presets */}
-      {!showResult && (
-        <div className="section-container mb-8">
+      {!showResult && !state.isLoading && (
+        <div className="section-container mb-8 relative z-10">
           <p className="text-center text-xs text-text-muted mb-3">
             Profils types (appel API reel)
           </p>
@@ -207,7 +212,7 @@ export default function DemoPage() {
         </div>
       )}
 
-      <div className="section-container pb-20">
+      <div className="section-container pb-20 relative z-10">
         {/* Indicateur d'etapes */}
         <FormStepIndicator
           currentStep={state.currentStep}
@@ -244,20 +249,8 @@ export default function DemoPage() {
           </div>
         )}
 
-        {/* Loading */}
-        {state.isLoading && (
-          <div className="max-w-2xl mx-auto text-center py-20">
-            <div className="inline-flex items-center gap-3 glass px-6 py-4">
-              <Activity size={20} className="text-accent-red animate-pulse" />
-              <div className="text-left">
-                <p className="text-sm font-medium">Analyse en cours...</p>
-                <p className="text-xs text-text-muted">
-                  Les modeles analysent le profil patient
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
+        {/* Loading cinematique */}
+        {state.isLoading && <AnalysisLoader />}
 
         {/* Formulaire ou Resultats */}
         {!state.isLoading && !showResult && (
