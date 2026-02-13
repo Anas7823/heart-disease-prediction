@@ -1,0 +1,6 @@
+variable,test,p_value,sig,effect,effect_label
+age,Wilcoxon,0,oui,0.4265,Petit
+bp,Wilcoxon,0.5031075778945169,non,0.0104,Negligeable
+cholesterol,Wilcoxon,0,oui,0.1664,Negligeable
+max_hr,Wilcoxon,0,oui,0.8867,Grand
+st_depression,Wilcoxon,0,oui,0.8659,Grand

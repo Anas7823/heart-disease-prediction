@@ -1,0 +1,9 @@
+variable,test,p_value,sig,cramers_v
+sex,Chi2,0,oui,0.3424
+chest_pain_type,Chi2,0,oui,0.5252
+fbs_over_120,Chi2,2.280819582273932e-156,oui,0.0336
+ekg_results,Chi2,0,oui,0.2191
+exercise_angina,Chi2,0,oui,0.4419
+slope_of_st,Chi2,0,oui,0.4298
+number_of_vessels_fluro,Chi2,0,oui,0.4632
+thallium,Chi2,0,oui,0.6058
