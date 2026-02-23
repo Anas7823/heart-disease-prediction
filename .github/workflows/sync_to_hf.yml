@@ -34,11 +34,23 @@ jobs:
           echo "*.joblib filter=lfs diff=lfs merge=lfs -text" > .gitattributes
           echo "*.json filter=lfs diff=lfs merge=lfs -text" >> .gitattributes
           
-          # 3. On initialise un nouveau Git tout neuf sans l'historique bloquant
+          # 3. NOUVEAU : On crée le README.md avec la configuration Docker
+          cat <<EOF > README.md
+          ---
+          title: Heart Disease API
+          emoji: 🫀
+          colorFrom: red
+          colorTo: pink
+          sdk: docker
+          app_port: 7860
+          ---
+          EOF
+          
+          # 4. On initialise un nouveau Git tout neuf sans l'historique bloquant
           git init
           git checkout -b main
           git add .
           git commit -m "Deploy API to Hugging Face"
           
-          # 4. On force l'envoi sur ton Space
+          # 5. On force l'envoi sur ton Space
           git push --force https://NS78:${HF_TOKEN}@huggingface.co/spaces/NS78/heart-disease-api main
