@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'backend/**' # Ne se déclenche que lorsque le back est modifié
+      - 'backend/**'
 
 jobs:
   deploy:
@@ -23,8 +23,8 @@ jobs:
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
           
-          # 2. Extraire le dossier backend vers une branche temporaire
-          git subtree split --prefix backend -b deploy-branch
+          # 2. Isoler le contenu du dossier backend dans une nouvelle branche locale 'deploy'
+          git subtree split --prefix backend -b deploy
           
-          # 3. Pousser la branche locale "deploy-branch" vers la branche "main" distante
-          git push -f https://NS78:$HF_TOKEN@huggingface.co/spaces/NS78/heart-disease-api deploy-branch:main
+          # 3. Pousser CETTE branche de force vers le main de Hugging Face
+          git push --force https://NS78:${HF_TOKEN}@huggingface.co/spaces/NS78/heart-disease-api deploy:main
